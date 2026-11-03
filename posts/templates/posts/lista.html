@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <ul>
+     <li><a href="{% url 'lista_posts' %}">inicio</a></li>
+  </ul>
+  
+
+  
+    <h1>Mis Posts</h1>
+      <a href="{% url 'crear_post' %}">+ Nuevo post</a>
+    <hr>
+
+
+    <table>
+  <tr>
+    <th>titulo</th>
+    <th>Contenido</th>
+    <th>Country</th>
+  </tr>
+     {% for post in posts %}
+        <h2>
+            <a href="{% url 'detalle_post' post.pk %}">
+                {{ post.titulo }}
+            </a>
+        </h2>
+        ...
+    {% endfor %}
+
+       
+</body>
+</html>
+
+ 
+  
+</table>

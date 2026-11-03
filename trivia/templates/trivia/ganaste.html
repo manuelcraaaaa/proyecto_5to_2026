@@ -1,0 +1,10 @@
+{% extends "trivia/base.html" %}
+{% block clase_extra %}perdiste{% endblock %}
+{% block contador %}Fin del juego{% endblock %}
+{% block pregunta %}{% endblock %}
+{% block opciones %}
+<div class="opciones">
+    <h1>GANASTEEEEEEEE</h1>
+    <a href="{% url 'trivia_inicio' %}">Volver a intentar</a>
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "historia/base.html" %}
+
+
+{% block clase_extra %}final-bueno{% endblock %}
+{% block titulo %}Final Bueno{% endblock %}
+{% block capitulo %}Fin de la historia{% endblock %}
+{% block titulo_escena %}Lograste escapar{% endblock %}
+
+
+{% block texto %}
+    El mapa de la cabana te muestra el camino de salida del bosque.
+    Cuando llegas al borde, el sol sale entre las nubes.
+{% endblock %}
+<h1>perdisteeeee</h1>
+
+{% block opciones %}
+    <div class="reinicio">
+        <a href="{% url 'historia_inicio' %}">Leer de nuevo desde el principio</a>
+    </div>
+{% endblock %}

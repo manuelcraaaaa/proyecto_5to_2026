@@ -1,0 +1,11 @@
+{% extends "trivia/base.html" %}
+{% block titulo %}Pregunta 1{% endblock %}
+{% block contador %}Pregunta 3 de 3{% endblock %}
+{% block pregunta %}¿ cual es el personaje de frefire que hace que no te puedan disparar mientras estas en un auto?{% endblock %}
+{% block opciones %}
+<div class="opciones">
+    <a href="{% url 'trivia_game_over' %}">luqueta</a>
+    <a href="{% url 'trivia_ganaste' %}">misha</a>
+    <a href="{% url 'trivia_game_over' %}">rafael</a>
+</div>
+{% endblock %}

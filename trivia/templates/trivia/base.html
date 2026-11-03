@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block titulo %}Trivia Gamer{% endblock %}</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #12122b; color: #eee;
+               display: flex; justify-content: center; padding: 40px 20px; }
+        .pantalla { background: #1e1e3f; border: 3px solid #7b2ff7;
+                    border-radius: 12px; padding: 30px; max-width: 600px; width: 100%; }
+        .contador { color: #aaa; text-transform: uppercase; font-size: 0.85rem; }
+        h1 { color: #00e5ff; }
+        .opciones a { display: block; margin: 10px 0; padding: 12px; color: white;
+                      background: #7b2ff7; text-decoration: none; border-radius: 8px; }
+        .opciones a:hover { background: #00e5ff; color: #12122b; }
+        .perdiste h1 { color: #ff4d4d; }
+        .ganaste h1  { color: #4cff88; }
+    </style>
+</head>
+<body>
+    <div class="pantalla {% block clase_extra %}{% endblock %}">
+        <p class="contador">{% block contador %}{% endblock %}</p>
+        <h1>{% block pregunta %}{% endblock %}</h1>
+        {% block opciones %}{% endblock %}
+    </div>
+</body>
+</html>

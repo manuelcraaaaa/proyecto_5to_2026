@@ -1,0 +1,20 @@
+{% extends "historia/base.html" %}
+
+
+{% block titulo %}El bosque verde{% endblock %}
+{% block capitulo %}Capitulo 2 de 3{% endblock %}
+{% block titulo_escena %}El bosque de los susurros{% endblock %}
+
+
+{% block texto %}
+entras al laboratorio_secrerto y te preguntas si queres ayudar al dueño
+{% endblock %}
+
+
+{% block opciones %}
+    <div class="opciones">
+        <a href="{% url 'historia_escena2' %}">responder que no</a>
+        <a href="{% url 'historia_final_malo' %}">responder que si</a>
+        <a href="{% url 'historia_inicio' %}">Volver atras</a>
+    </div>
+{% endblock %}

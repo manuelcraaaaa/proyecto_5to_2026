@@ -1,0 +1,22 @@
+{% extends "historia/base.html" %}
+
+
+{% block titulo %}El bosque verde{% endblock %}
+{% block capitulo %}Capitulo 2 de 3{% endblock %}
+{% block titulo_escena %}El bosque de los susurros{% endblock %}
+
+
+{% block texto %}
+    El camino verde te lleva a un claro con una cabana iluminada.
+    Alguien llama a la puerta desde adentro.
+    En el suelo hay un sobre con tu nombre.
+{% endblock %}
+
+
+{% block opciones %}
+    <div class="opciones">
+        <a href="{% url 'historia_escena1' %}">Entrar a la cabana</a>
+        <a href="{% url 'historia_final_malo' %}">Ignorar y seguir caminando</a>
+        <a href="{% url 'historia_inicio' %}">Volver atras</a>
+    </div>
+{% endblock %}

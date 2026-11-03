@@ -1,0 +1,12 @@
+{% extends "trivia/base.html" %}
+{% block titulo %}Pregunta 1{% endblock %}
+{% block contador %}Pregunta 1 de 3{% endblock %}
+{% block pregunta %}¿Qué es un NPC en un videojuego?{% endblock %}
+{% block opciones %}
+<div class="opciones">
+    <a href="{% url 'trivia_game_over' %}">Un nivel secreto</a>
+    <a href="{% url 'trivia_pregunta2' %}">Un personaje que no maneja el jugador</a>
+    <a href="{% url 'trivia_game_over' %}">Un tipo de consola</a>
+</div>
+{% endblock %}
+

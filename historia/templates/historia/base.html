@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block titulo %}Historia Interactiva{% endblock %}</title>
+    <style>
+        body { font-family: Georgia, serif; background-color: #1a1a2e;
+               color: #e0e0e0; display: flex; justify-content: center; padding: 40px 20px; margin: 0; }
+        .pagina { background-color: #16213e; border: 2px solid #0f3460;
+                  border-radius: 12px; padding: 40px; max-width: 620px; width: 100%; }
+        h1 { color: #e94560; }
+        .capitulo { color: #a0a0c0; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; }
+        .texto { line-height: 1.9; margin-bottom: 35px; }
+        .opciones { display: flex; flex-direction: column; gap: 14px; }
+        .opciones a { display: block; background: #0f3460; color: #e0e0e0;
+                      border: 1px solid #e94560; border-radius: 8px; padding: 14px 20px;
+                      text-decoration: none; transition: background 0.2s; }
+        .opciones a:hover { background: #e94560; color: white; }
+        .final-bueno h1 { color: #4caf50; }
+        .final-malo h1  { color: #f44336; }
+        .reinicio { margin-top: 30px; text-align: center; }
+        .reinicio a { color: #a0a0c0; text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="pagina {% block clase_extra %}{% endblock %}">
+
+
+        <p class="capitulo">{% capitulo 1 %}{% endblock %}</p>
+
+
+        <h1>{% block titulo_escena %}{% endblock %}</h1>
+
+
+        <p class="texto">{% block texto %}{% endblock %}</p>
+
+
+        {% block opciones %}{% endblock %}
+
+
+    </div>
+</body>
+</html>

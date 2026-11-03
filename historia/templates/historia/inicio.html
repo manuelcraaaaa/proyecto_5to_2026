@@ -1,0 +1,21 @@
+{% extends "trivia/base.html" %}
+
+
+{% block titulo %}Inicio — Historia Interactiva{% El misterio del laboratorio secreto%}
+{% block capitulo %}Capitulo 1 de 3{% endblock %}
+{% block titulo_escena %}La encrucijada del bosque{% endblock %}
+
+
+{% block texto %}
+  Tomás es un estudiante que se queda solo en la escuela después de clases. Mientras guarda sus cosas, 
+  escucha un ruido extraño que viene de un pasillo cerrado.
+   Ahora debe decidir qué hacer
+{% endblock %}
+
+
+{% block opciones %}
+    <div class="opciones">
+        <a href="{% url 'historia_bosque' %}"> abiri la puerta de la izquierda</a>
+        <a href="{% url 'final_malo.html' %}">abiri la puerta de la derecha</a>
+    </div>
+{% endblock %}

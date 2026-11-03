@@ -1,0 +1,8 @@
+{% extends "trivia/base.html" %}
+{% block contador %}Trivia Gamer{% endblock %}
+{% block pregunta %}¿Cuánto sabés de videojuegos?{% endblock %}
+{% block opciones %}
+<div class="opciones">
+    <a href="{% url 'trivia_pregunta1' %}">Empezar a jugar</a>
+</div>
+{% endblock %}

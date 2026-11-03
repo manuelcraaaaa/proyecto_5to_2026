@@ -1,0 +1,11 @@
+{% extends "trivia/base.html" %}
+{% block titulo %}Pregunta 1{% endblock %}
+{% block contador %}Pregunta 2 de 3{% endblock %}
+{% block pregunta %}¿cual es el pico mas dificil de conseguir en minecraft?{% endblock %}
+{% block opciones %}
+<div class="opciones">
+    <a href="{% url 'trivia_game_over' %}">pico de madera</a>
+    <a href="{% url 'trivia_pregunta3' %}">pico de nederita</a>
+    <a href="{% url 'trivia_game_over' %}">pico de diamante</a>
+</div>
+{% endblock %}
